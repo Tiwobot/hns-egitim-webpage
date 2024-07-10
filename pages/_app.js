@@ -31,16 +31,16 @@ export default class MyApp extends App {
     let comment = document.createComment(`
 
 =========================================================
-* Notus NextJS - v1.1.0 based on Tailwind Starter Kit by Creative Tim
+* HNS Eğitim - v1.1.0 based on Tailwind Starter Kit by Havva Nur Serin
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/notus-nextjs
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Havva Nur Serin (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/notus-nextjs/blob/main/LICENSE.md)
 
 * Tailwind Starter Kit Page: https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation
 
-* Coded by Creative Tim
+* Coded by Havva Nur Serin
 
 =========================================================
 
@@ -70,7 +70,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>Notus NextJS by Creative Tim</title>
+          <title>HNS Eğitim by Havva Nur Serin</title>
         </Head>
         <Layout>
           <Component {...pageProps} />

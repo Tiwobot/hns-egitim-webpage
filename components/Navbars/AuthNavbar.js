@@ -16,7 +16,7 @@ export default function Navbar(props) {
                 className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#pablo"
               >
-                Notus NextJS
+                HNS Eğitim
               </a>
             </Link>
             <button
@@ -40,8 +40,8 @@ export default function Navbar(props) {
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-auth-navbar"
                 >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  Docs
+                  <i className="" />{" "}
+                  Demo Ders
                 </a>
               </li>
             </ul>

@@ -14,21 +14,19 @@ export default function Index() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                Notus NextJS - A beautiful extension for Tailwind CSS.
+                Profesyonel Matematik Eğitmeni
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                Notus NextJS is Free and Open Source. It does not change any of
-                the CSS from{" "}
+                Havva Nur Serin ile çocuğunuzun geleceğini garantiye alın.{" "}
                 <a
-                  href="https://tailwindcss.com/?ref=creativetim"
+                  href="https://www.ibo.org"
                   className="text-blueGray-600"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Tailwind CSS
+                  IB Sertifikası
                 </a>
-                . It features multiple HTML elements and it comes with dynamic
-                components for ReactJS, Vue and Angular.
+                 'na sahip özel dersler ile uluslararası standartlara uygun yurt dışında da kabul gören üst düzey eğitim.
               </p>
               <div className="mt-12">
                 <a
@@ -36,14 +34,14 @@ export default function Index() {
                   target="_blank"
                   className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 >
-                  Get started
+                  Bilgi Al
                 </a>
                 <a
                   href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
                   className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                   target="_blank"
                 >
-                  Github Star
+                  IB nedir?
                 </a>
               </div>
             </div>
@@ -122,7 +120,7 @@ export default function Index() {
                         CSS Components
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        Notus NextJS comes with a huge number of Fully Coded CSS
+                        HNS Eğitim comes with a huge number of Fully Coded CSS
                         components.
                       </p>
                     </div>
@@ -158,14 +156,14 @@ export default function Index() {
                   <div className="relative flex flex-col min-w-0">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                        <i className="fas fa-file-alt"></i>
+                        <i className="fas -alt"></i>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
                         Documentation
                       </h6>
                       <p className="mb-4 text-blueGray-500">
                         Built by developers for developers. You will love how
-                        easy is to to work with Notus NextJS.
+                        easy is to to work with HNS Eğitim.
                       </p>
                     </div>
                   </div>
@@ -420,7 +418,7 @@ export default function Index() {
             <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
               <div className="md:pr-12">
                 <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                  <i className="fas fa-file-alt text-xl"></i>
+                  <i className="fas -alt text-xl"></i>
                 </div>
                 <h3 className="text-3xl font-semibold">
                   Complex Documentation
@@ -496,7 +494,7 @@ export default function Index() {
           <div className="w-full md:w-6/12 px-12 md:px-4">
             <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
-              Notus NextJS is a completly new product built using our past
+              HNS Eğitim is a completly new product built using our past
               experience in web templates. Take the examples we made for you and
               start playing with them.
             </p>
