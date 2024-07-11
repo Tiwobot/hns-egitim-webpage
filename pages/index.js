@@ -95,13 +95,10 @@ export default function Index() {
                   ></polygon>
                 </svg>
                 <h4 className="text-xl font-bold text-white">
-                  Great for your awesome project
+                  Öğrencimiz için en iyisi!
                 </h4>
                 <p className="text-md font-light mt-2 text-white">
-                  Putting together a page has never been easier than matching
-                  together pre-made components. From landing pages
-                  presentation to login areas, you can easily customise and
-                  built your pages.
+                HNS Eğitim ile matematikteki hedeflerinize emin adımlarla ilerleyin. Detaylı bilgi almak ve kayıt olmak için bizimle iletişime geçin!
                 </p>
               </blockquote>
             </div>
@@ -113,28 +110,26 @@ export default function Index() {
                 <div className="relative flex flex-col mt-4">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <i className="fas fa-sitemap"></i>
+                      <i class="fas fa-user-check"></i>
                     </div>
                     <h6 className="text-xl mb-1 font-semibold">
-                      CSS Components
+                    Uzman Öğretmen
                     </h6>
                     <p className="mb-4 text-blueGray-500">
-                      HNS Eğitim comes with a huge number of Fully Coded CSS
-                      components.
+                    Alanında deneyimli ve nitelikli öğretmenlerimiz, her öğrencinin öğrenme tarzına uygun bireysel ders programları sunar.
                     </p>
                   </div>
                 </div>
                 <div className="relative flex flex-col min-w-0">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <i className="fas fa-drafting-compass"></i>
+                    <i class="fas fa-star"></i>
                     </div>
                     <h6 className="text-xl mb-1 font-semibold">
-                      JavaScript Components
+                      Premium Kalite
                     </h6>
                     <p className="mb-4 text-blueGray-500">
-                      We also feature many dynamic components for React,
-                      NextJS, Vue and Angular.
+                    Uluslararası standartlarda öğretim materyalleri ve yöntemleri ile öğrencilerimizin potansiyellerini en üst seviyeye çıkarırız.
                     </p>
                   </div>
                 </div>
@@ -143,26 +138,24 @@ export default function Index() {
                 <div className="relative flex flex-col min-w-0 mt-4">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <i className="fas fa-newspaper"></i>
+                      <i class="fas fa-edit"></i>
                     </div>
-                    <h6 className="text-xl mb-1 font-semibold">Pages</h6>
+                    <h6 className="text-xl mb-1 font-semibold">Özelleştirilmiş Programlar</h6>
                     <p className="mb-4 text-blueGray-500">
-                      This extension also comes with 3 sample pages. They are
-                      fully coded so you can start working instantly.
+                    Her öğrencinin ihtiyaçlarına göre özel olarak hazırlanan ders planlarıyla eksikleri kapatın, güçlü yönlerinizi geliştirin.
                     </p>
                   </div>
                 </div>
                 <div className="relative flex flex-col min-w-0">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <i className="fas -alt"></i>
+                    <i class="fas fa-question"></i>
                     </div>
                     <h6 className="text-xl mb-1 font-semibold">
-                      Documentation
+                    Destek ve İlgi
                     </h6>
                     <p className="mb-4 text-blueGray-500">
-                      Built by developers for developers. You will love how
-                      easy is to to work with HNS Eğitim.
+                    Sadece ders saatlerinde değil, her zaman yanınızdayız. Sorularınızı çözmek ve başarıya giden yolda size rehberlik etmek için buradayız.
                     </p>
                   </div>
                 </div>
