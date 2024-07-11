@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 // components
 
 import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
@@ -14,7 +15,7 @@ export default function Navbar(props) {
             href="/"
             className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
             
-              HNS Eğitim
+            <Image src="/img/hns-black.png" width="120" height="50" />
             
           </Link>
           <button
