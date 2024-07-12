@@ -1361,7 +1361,7 @@ select {
 
 .bg-blueGray-400 {
   --tw-bg-opacity: 1;
-  background-color: rgba(148, 163, 184, var(--tw-bg-opacity));
+  background-color: rgba(98, 113, 221, var(--tw-text-opacity));
 }
 
 .bg-blueGray-600 {
@@ -3279,11 +3279,13 @@ select {
 .text-blueGray-500 {
   --tw-text-opacity: 1;
   color: rgba(100, 116, 139, var(--tw-text-opacity));
+  font-family: 'Mona Sans', sans-serif;
 }
 
 .text-blueGray-600 {
   --tw-text-opacity: 1;
-  color: rgba(71, 85, 105, var(--tw-text-opacity));
+  color: rgba(165, 165, 25, var(--tw-text-opacity));
+  font-family: 'Mona Sans', sans-serif;
 }
 
 .text-blueGray-700 {
