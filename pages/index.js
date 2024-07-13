@@ -353,28 +353,25 @@ export default function Index() {
           <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
             <div className="md:pr-12">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                <i className="fas -alt text-xl"></i>
+              <i class="fas fa-desktop"></i>
               </div>
               <h3 className="text-3xl font-semibold text-custom-blue">
-                Complex Documentation
+                Online Eğitim Materyali
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                This extension comes a lot of fully coded examples that help
-                you get started faster. You can adjust the colors and also the
-                programming language. You can change the text and images and
-                you're good to go.
+                Öğrencilerimize evlerinin konforunda çalışabilmeleri için materyaller paylaşılır, öğrencimizin talebi doğrultusunda online ders yapılarak konu anlatımı / soru çözümü yapılır.
               </p>
               <ul className="list-none mt-6">
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
                       <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
-                        <i className="fas fa-fingerprint"></i>
+                      <i class="fas fa-file-alt"></i>
                       </span>
                     </div>
                     <div>
                       <h4 className="text-blueGray-500">
-                        Built by Developers for Developers
+                        Konu Bazında Eğitim Materyalleri
                       </h4>
                     </div>
                   </div>
@@ -383,12 +380,12 @@ export default function Index() {
                   <div className="flex items-center">
                     <div>
                       <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
-                        <i className="fab fa-html5"></i>
+                      <i class="fas fa-headset"></i>
                       </span>
                     </div>
                     <div>
                       <h4 className="text-blueGray-500">
-                        Carefully crafted code for Components
+                      Online-Konferans Ders Anlatımları
                       </h4>
                     </div>
                   </div>
@@ -397,12 +394,12 @@ export default function Index() {
                   <div className="flex items-center">
                     <div>
                       <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-50 mr-3">
-                        <i className="far fa-paper-plane"></i>
+                      <i class="fas fa-flask"></i>
                       </span>
                     </div>
                     <div>
                       <h4 className="text-blueGray-500">
-                        Dynamic Javascript Components
+                      Online Testler
                       </h4>
                     </div>
                   </div>
@@ -427,7 +424,7 @@ export default function Index() {
 
       <div className="justify-center text-center flex flex-wrap mt-24">
         <div className="w-full md:w-6/12 px-12 md:px-4">
-          <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
+          <h2 className="font-semibold text-4xl">HNS ile yeni nesil bir eğitime hazır mısınız?</h2>
           <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
             HNS Eğitim is a completly new product built using our past
             experience in web templates. Take the examples we made for you and
