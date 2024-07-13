@@ -13,7 +13,7 @@ export default function Index() {
         <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
           <div className="pt-32 sm:pt-0">
             <h2 className="font-semibold text-4xl text-blueGray-600">
-              Profesyonel Matematik Eğitmeni
+              Profesyonel Matematik Eğitimi
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
               Havva Nur Serin ile çocuğunuzun geleceğini garantiye alın.{" "}
@@ -25,7 +25,7 @@ export default function Index() {
               >
                 IB Sertifikası
               </a>
-               'na sahip özel dersler ile uluslararası standartlara uygun yurt dışında da kabul gören üst düzey eğitim.
+               'na sahip özel dersler ile uluslararası standartlara uygun yurt dışında da kabul gören üst düzey eğitime ulaşmanız artık çok kolay.
             </p>
             <div className="mt-12">
               <a
@@ -171,46 +171,18 @@ export default function Index() {
             <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
               <i className="fas fa-sitemap text-xl"></i>
             </div>
-            <h3 className="text-3xl mb-2 font-semibold leading-normal">
-              CSS Components
+            <h3 className="text-3xl mb-2 font-semibold leading-normal text-custom-blue">
+              Sınıf ve Konular
             </h3>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-              Every element that you need in a product comes built in as a
-              component. All components fit perfectly with each other and can
-              have different colours.
+            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-500">
+              Özel derslerimiz ilk okul ve orta okul seviyelerine yönelik olup, MEB'in yayınladığı müfredatı takip etmekle beraber aynı zamanda kişisel gelişim, yaratıcılık ve girişkenliğe yönelik eğitimleride kapsamaktadır. 
             </p>
-            <div className="block pb-6">
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Buttons
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Inputs
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Labels
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Menus
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Navbars
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Pagination
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Progressbars
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Typography
-              </span>
-            </div>
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
               target="_blank"
-              className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
+              className="font-bold text-blueGray-500 hover:text-blueGray-700 ease-linear transition-all duration-150"
             >
-              View All{" "}
+              Detaylı Bilgi{" "}
               <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
             </a>
           </div>
@@ -356,49 +328,20 @@ export default function Index() {
               <i className="fas fa-drafting-compass text-xl"></i>
             </div>
             <h3 className="text-3xl mb-2 font-semibold leading-normal">
-              Javascript Components
+              Kişiselleştirilmiş Dersler
             </h3>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-              In order to create a great User Experience some components
-              require JavaScript. In this way you can manipulate the elements
-              on the page and give more options to your users.
+            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-500">
+            HNS Eğitim olarak, öğrencilerimize sadece bilgi vermekle kalmıyor, aynı zamanda onların öğrenme sürecinde aktif bir şekilde yer almalarını sağlıyoruz. Her öğrencinin benzersiz özelliklerini ve güçlü yönlerini keşfetmelerine destek oluyoruz.
             </p>
-            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-              We created a set of Components that are dynamic and come to help
-              you.
+            <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-500">
+            Deneyimli ve alanında uzman öğretmenimiz, öğrencilerimizin bireysel öğrenme tarzlarına uygun olarak dersler düzenler ve onların ilgi alanlarına yönelik içerikler sunar.
             </p>
-            <div className="block pb-6">
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Alerts
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Dropdowns
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Menus
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Modals
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Navbars
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Popovers
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Tabs
-              </span>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                Tooltips
-              </span>
-            </div>
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
               target="_blank"
-              className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
+              className="font-bold text-blueGray-500 hover:text-blueGray-700 ease-linear transition-all duration-150"
             >
-              View all{" "}
+              Detaylı Bilgi{" "}
               <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
             </a>
           </div>
@@ -412,7 +355,7 @@ export default function Index() {
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <i className="fas -alt text-xl"></i>
               </div>
-              <h3 className="text-3xl font-semibold">
+              <h3 className="text-3xl font-semibold text-custom-blue">
                 Complex Documentation
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">

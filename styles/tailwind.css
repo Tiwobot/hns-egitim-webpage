@@ -1371,7 +1371,7 @@ select {
 
 .bg-blueGray-700 {
   --tw-bg-opacity: 1;
-  background-color: rgba(51, 65, 85, var(--tw-bg-opacity));
+  background-color: rgba(165, 165, 25, var(--tw-bg-opacity));
 }
 
 .bg-blueGray-800 {
@@ -3290,7 +3290,12 @@ select {
 
 .text-blueGray-700 {
   --tw-text-opacity: 1;
-  color: rgba(51, 65, 85, var(--tw-text-opacity));
+  color: rgba(165, 165, 25, var(--tw-text-opacity));
+}
+
+.text-custom-blue {
+  --tw-bg-opacity: 1;
+  color: rgba(98, 113, 221, var(--tw-text-opacity));
 }
 
 .text-blueGray-800 {
