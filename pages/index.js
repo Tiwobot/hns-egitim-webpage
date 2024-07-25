@@ -15,6 +15,7 @@ export default function Index() {
             
             <h2 className="font-semibold text-4xl text-blueGray-600">
               Profesyonel Matematik Eğitimi
+              <iframe styles="border-radius:12px" src="https://open.spotify.com/embed/track/4Hhv2vrOTy89HFRcjU3QOx?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               <iframe styles="border-radius:12px" src="https://open.spotify.com/embed/track/4Hhv2vrOTy89HFRcjU3QOx?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
