@@ -12,9 +12,10 @@ export default function Index() {
       <div className="container mx-auto items-center flex flex-wrap">
         <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
           <div className="pt-32 sm:pt-0">
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4Hhv2vrOTy89HFRcjU3QOx?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
             <h2 className="font-semibold text-4xl text-blueGray-600">
               Profesyonel Matematik Eğitimi
+              <iframe styles="border-radius:12px" src="https://open.spotify.com/embed/track/4Hhv2vrOTy89HFRcjU3QOx?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
               Havva Nur Serin ile çocuğunuzun geleceğini garantiye alın.{" "}
