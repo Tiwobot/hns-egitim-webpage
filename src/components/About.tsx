@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, Container, Paper, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import SchoolIcon from '@mui/icons-material/School';
 import PersonIcon from '@mui/icons-material/Person';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import PsychologyIcon from '@mui/icons-material/Psychology';

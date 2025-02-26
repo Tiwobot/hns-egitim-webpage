@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Container, useTheme } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from '@mui/lab';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring} from 'framer-motion';
 import styled from 'styled-components';
 import WorkIcon from '@mui/icons-material/Work';
 

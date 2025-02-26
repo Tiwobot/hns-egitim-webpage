@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container, Button, useTheme } from '@mui/material';
+import { Box, Typography, Container, Button} from '@mui/material';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
