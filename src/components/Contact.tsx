@@ -119,14 +119,15 @@ const GlowEffect = styled(motion.div)`
 const Contact = () => {
   const theme = useTheme();
   const [copied, setCopied] = React.useState(false);
+  const email = 'havvanurseriin@gmail.com';
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText('havvanurseriin@gmail.com');
+      await navigator.clipboard.writeText(email);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      console.error('Failed to copy text: ', err);
+      console.error('Failed to copy:', err);
     }
   };
 
@@ -237,7 +238,7 @@ const Contact = () => {
                   fontWeight: 500
                 }}
               >
-                havvanurseriin@gmail.com
+                {email}
               </Typography>
               <Typography
                 variant="body2"
