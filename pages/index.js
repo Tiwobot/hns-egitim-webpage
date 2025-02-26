@@ -13,37 +13,41 @@ export default function Index() {
         <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
           <div className="pt-32 sm:pt-0">
             
-            <h2 className="font-semibold text-4xl text-blueGray-600">
-              Profesyonel Matematik Eğitimi
+            <h2 className="font-semibold text-5xl text-custom-blue">
+              Matematik Öğrenmeyi Sevdiren Öğretmen
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-              Havva Nur Serin ile çocuğunuzun geleceğini garantiye alın.{" "}
-              <a
-                href="https://www.ibo.org"
-                className="text-blueGray-600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                IB Sertifikası
-              </a>
-               'na sahip özel dersler ile uluslararası standartlara uygun yurt dışında da kabul gören üst düzey eğitime ulaşmanız artık çok kolay.
+              Yeditepe Üniversitesi Matematik Öğretmenliği mezunu ve IB sertifikalı öğretmen olarak, 
+              öğrencilerinizin matematiği severek öğrenmesini sağlıyorum.
             </p>
-            <div className="mt-12">
+            <div className="mt-12 flex flex-wrap">
               <a
-                href="/"
-                target="_blank"
-                className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                href="#contact"
+                className="get-started hover-scale text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-custom-blue active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               >
-                Bilgi Al
+                Ücretsiz Deneme Dersi
               </a>
               <a
-                href="https://www.ibo.org"
-                className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
-                target="_blank"
+                href="#about"
+                className="github-star hover-scale ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-custom-purple active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
               >
-                IB nedir?
+                Daha Fazla Bilgi
               </a>
             </div>
+          </div>
+        </div>
+        <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative">
+          <div className="animate-float">
+            <img
+              alt="Math Education"
+              src="/img/math-education.svg"
+              className="w-full align-middle rounded absolute"
+              style={{
+                maxWidth: "300px",
+                top: "0",
+                right: "0",
+              }}
+            />
           </div>
         </div>
       </div>
@@ -77,29 +81,19 @@ export default function Index() {
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center">
           <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+            <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-custom-blue">
               <img
                 alt="..."
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                src="/img/teaching-method.jpg"
                 className="w-full align-middle rounded-t-lg"
               />
               <blockquote className="relative p-8 mb-4">
-                <svg
-                  preserveAspectRatio="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 583 95"
-                  className="absolute left-0 w-full block h-95-px -top-94-px"
-                >
-                  <polygon
-                    points="-30,95 583,95 583,65"
-                    className="text-blueGray-700 fill-current"
-                  ></polygon>
-                </svg>
                 <h4 className="text-xl font-bold text-white">
-                  Öğrencimiz için en iyisi!
+                  Modern Öğretim Yöntemleri
                 </h4>
                 <p className="text-md font-light mt-2 text-white">
-                HNS Eğitim ile matematikteki hedeflerinize emin adımlarla ilerleyin. Detaylı bilgi almak ve kayıt olmak için bizimle iletişime geçin!
+                  Farklı öğrenme stillerine uygun, interaktif ve eğlenceli ders içerikleri ile 
+                  öğrencilerinizin matematik sevgisini artırıyorum.
                 </p>
               </blockquote>
             </div>
