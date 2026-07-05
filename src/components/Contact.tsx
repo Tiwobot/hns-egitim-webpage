@@ -183,6 +183,10 @@ const Contact = () => {
               <ProfileImage
                 src="/teacher-profile.jpg"
                 alt="Havva Nur Serin"
+                sx={{
+                  width: { xs: 240, sm: 340 },
+                  height: { xs: 240, sm: 340 },
+                }}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
