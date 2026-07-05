@@ -3,10 +3,11 @@ import { Box, Typography, Container, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import SchoolIcon from '@mui/icons-material/School';
+import TiltCard from './TiltCard';
 
 const EducationSection = styled(Box)`
   padding: 100px 0;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);
 `;
 
 const StyledPaper = styled(Paper)`
@@ -62,8 +63,9 @@ const Education = () => {
     <EducationSection id="education">
       <Container maxWidth="lg">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.8 }}
         >
           <Typography
@@ -71,7 +73,13 @@ const Education = () => {
             component="h2"
             align="center"
             gutterBottom
-            sx={{ mb: 6 }}
+            sx={{
+              mb: 6,
+              background: theme => `linear-gradient(135deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              fontWeight: 'bold'
+            }}
           >
             Education
           </Typography>
@@ -79,23 +87,33 @@ const Education = () => {
           <Grid container spacing={4}>
             {education.map((edu, index) => (
               <Grid item xs={12} md={4} key={index}>
-                <StyledPaper elevation={3}>
-                  <IconWrapper>
-                    <SchoolIcon fontSize="large" />
-                    <Typography variant="h6" sx={{ ml: 2 }}>
-                      {edu.school}
-                    </Typography>
-                  </IconWrapper>
-                  <Typography variant="subtitle1" color="primary" gutterBottom>
-                    {edu.program}
-                  </Typography>
-                  <Typography variant="subtitle2" color="textSecondary" gutterBottom>
-                    {edu.period}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {edu.description}
-                  </Typography>
-                </StyledPaper>
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.6, delay: index * 0.15 }}
+                  style={{ height: '100%' }}
+                >
+                  <TiltCard>
+                    <StyledPaper elevation={3}>
+                      <IconWrapper>
+                        <SchoolIcon fontSize="large" />
+                        <Typography variant="h6" sx={{ ml: 2 }}>
+                          {edu.school}
+                        </Typography>
+                      </IconWrapper>
+                      <Typography variant="subtitle1" color="primary" gutterBottom>
+                        {edu.program}
+                      </Typography>
+                      <Typography variant="subtitle2" color="textSecondary" gutterBottom>
+                        {edu.period}
+                      </Typography>
+                      <Typography variant="body2" color="textSecondary">
+                        {edu.description}
+                      </Typography>
+                    </StyledPaper>
+                  </TiltCard>
+                </motion.div>
               </Grid>
             ))}
           </Grid>

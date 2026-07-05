@@ -3,7 +3,8 @@ import { Box, Typography, Container, Paper, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import PersonIcon from '@mui/icons-material/Person';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import { AutoStories as AutoStoriesIcon } from '@mui/icons-material';
+import TiltCard from './TiltCard';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import LanguageIcon from '@mui/icons-material/Language';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
@@ -104,8 +105,9 @@ const About = () => {
     <AboutSection id="about">
       <Container maxWidth="lg">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.8 }}
         >
           <Typography
@@ -126,6 +128,7 @@ const About = () => {
 
           <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
+              <TiltCard>
               <StyledPaper elevation={3}>
                 <IconWrapper>
                   <PersonIcon fontSize="large" />
@@ -146,9 +149,11 @@ const About = () => {
                   self-confidence, and a genuine appreciation for mathematics in my students.
                 </Typography>
               </StyledPaper>
+              </TiltCard>
             </Grid>
 
             <Grid item xs={12} md={6}>
+              <TiltCard>
               <StyledPaper elevation={3}>
                 <IconWrapper>
                   <AutoStoriesIcon fontSize="large" />
@@ -166,9 +171,11 @@ const About = () => {
                   <li>Development of problem-solving strategies</li>
                 </Typography>
               </StyledPaper>
+              </TiltCard>
             </Grid>
 
             <Grid item xs={12} md={6}>
+              <TiltCard>
               <StyledPaper elevation={3}>
                 <IconWrapper>
                   <PsychologyIcon fontSize="large" />
@@ -183,9 +190,11 @@ const About = () => {
                   ))}
                 </SkillList>
               </StyledPaper>
+              </TiltCard>
             </Grid>
 
             <Grid item xs={12} md={6}>
+              <TiltCard>
               <StyledPaper elevation={3}>
                 <IconWrapper>
                   <EmojiObjectsIcon fontSize="large" />
@@ -200,6 +209,7 @@ const About = () => {
                   ))}
                 </SkillList>
               </StyledPaper>
+              </TiltCard>
             </Grid>
 
             <Grid item xs={12}>

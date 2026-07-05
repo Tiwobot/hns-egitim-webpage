@@ -3,6 +3,7 @@ import { Box, Typography, Container, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
+import Hero3D from './Hero3D';
 
 const HeroSection = styled(Box)`
   min-height: 100vh;
@@ -98,10 +99,12 @@ const StyledScrollLink = styled(ScrollLink)`
 
 const Hero = () => {
   // Reduce number of shapes for mobile
-  const shapeCount = window.innerWidth < 768 ? 3 : 5;
+  const isMobile = window.innerWidth < 768;
+  const shapeCount = isMobile ? 2 : 3;
 
   return (
     <HeroSection>
+      {!isMobile && <Hero3D />}
       {[...Array(shapeCount)].map((_, i) => (
         <FloatingShape
           key={i}
@@ -133,6 +136,8 @@ const Hero = () => {
           <GlowingText>
             <Typography
               variant="h1"
+              component="h1"
+              aria-label="Havva Nur Serin"
               sx={{
                 fontSize: { xs: '2.5rem', md: '4rem' },
                 fontWeight: 800,
@@ -140,7 +145,22 @@ const Hero = () => {
                 letterSpacing: '-0.02em',
               }}
             >
-              Havva Nur Serin
+              {'Havva Nur Serin'.split('').map((char, i) => (
+                <motion.span
+                  key={i}
+                  aria-hidden="true"
+                  style={{ display: 'inline-block', whiteSpace: 'pre' }}
+                  initial={{ opacity: 0, y: 30, rotateX: 90 }}
+                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.3 + i * 0.04,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                >
+                  {char}
+                </motion.span>
+              ))}
             </Typography>
           </GlowingText>
           <GlowingText>

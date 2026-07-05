@@ -99,17 +99,27 @@ const ProfileSection = styled(Box)`
 `;
 
 const ProfileImage = styled(motion(Avatar))`
-  width: 180px;
-  height: 180px;
-  border: 2px solid white;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  height: 320px;
+  border: 5px solid white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   margin-bottom: 24px;
+
+  @media (max-width: 600px) {
+    width: 240px;
+    height: 240px;
+  }
 `;
 
 const GlowEffect = styled(motion.div)`
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 360px;
+  height: 360px;
+
+  @media (max-width: 600px) {
+    width: 270px;
+    height: 270px;
+  }
   border-radius: 50%;
   background: ${({ theme }) => `linear-gradient(135deg, ${theme.palette.primary.main}40, ${theme.palette.secondary.main}40)`};
   filter: blur(20px);
@@ -135,8 +145,9 @@ const Contact = () => {
     <ContactSection id="contact">
       <Container maxWidth="lg">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.8 }}
         >
           <Typography
@@ -172,9 +183,11 @@ const Contact = () => {
               <ProfileImage
                 src="/teacher-profile.jpg"
                 alt="Havva Nur Serin"
-                whileHover={{ scale: 3.15 }}
-                whileInView={{ scale: 2.95 }}
-                transition={{ duration: 0.7 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.06 }}
+                transition={{ duration: 0.5 }}
               />
             </ProfileSection>
 

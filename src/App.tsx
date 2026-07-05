@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider as MUIThemeProvider, createTheme } from '@mui/material';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -6,7 +6,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import References from './components/References';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import { Box } from '@mui/material';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -180,6 +182,17 @@ const theme = createTheme({
 });
 
 function App() {
+  useEffect(() => {
+    console.log(
+      '%c∞',
+      'font-size: 32px; color: #a5b4fc;'
+    );
+    console.log(
+      '%cFun fact: parallel lines never meet, but we were never parallel. Here whenever you need a friend.',
+      'font-size: 12px; color: #64748b; font-style: italic;'
+    );
+  }, []);
+
   const logos = [...Array(16)].map((_, index) => (
     <Logo key={index} src="/hns-white.png" alt="HNS Logo" />
   ));
@@ -222,7 +235,9 @@ function App() {
           <About />
           <Experience />
           <Education />
+          <References />
           <Contact />
+          <Footer />
           <Watermark src="/hns mini.png" alt="HNS Watermark" />
         </Box>
       </StyledThemeProvider>
