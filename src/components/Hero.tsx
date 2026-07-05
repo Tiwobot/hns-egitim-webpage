@@ -104,7 +104,7 @@ const Hero = () => {
 
   return (
     <HeroSection>
-      {!isMobile && <Hero3D />}
+      <Hero3D mobile={isMobile} />
       {[...Array(shapeCount)].map((_, i) => (
         <FloatingShape
           key={i}
@@ -145,22 +145,35 @@ const Hero = () => {
                 letterSpacing: '-0.02em',
               }}
             >
-              {'Havva Nur Serin'.split('').map((char, i) => (
-                <motion.span
-                  key={i}
-                  aria-hidden="true"
-                  style={{ display: 'inline-block', whiteSpace: 'pre' }}
-                  initial={{ opacity: 0, y: 30, rotateX: 90 }}
-                  animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.3 + i * 0.04,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                >
-                  {char}
-                </motion.span>
-              ))}
+              {'Havva Nur Serin'.split(' ').map((word, wordIndex, words) => {
+                const lettersBefore = words
+                  .slice(0, wordIndex)
+                  .reduce((sum, w) => sum + w.length + 1, 0);
+                return (
+                  <span
+                    key={wordIndex}
+                    aria-hidden="true"
+                    style={{ display: 'inline-block', whiteSpace: 'nowrap' }}
+                  >
+                    {word.split('').map((char, i) => (
+                      <motion.span
+                        key={i}
+                        style={{ display: 'inline-block' }}
+                        initial={{ opacity: 0, y: 30, rotateX: 90 }}
+                        animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                        transition={{
+                          duration: 0.5,
+                          delay: 0.3 + (lettersBefore + i) * 0.04,
+                          ease: [0.22, 1, 0.36, 1],
+                        }}
+                      >
+                        {char}
+                      </motion.span>
+                    ))}
+                    {wordIndex < words.length - 1 && '\u00A0'}
+                  </span>
+                );
+              })}
             </Typography>
           </GlowingText>
           <GlowingText>

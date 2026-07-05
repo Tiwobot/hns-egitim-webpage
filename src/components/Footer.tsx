@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Typography, Container, Tooltip } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Container, Tooltip, ClickAwayListener } from '@mui/material';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
@@ -14,7 +14,8 @@ const InfinityMark = styled(motion.span)`
   display: inline-block;
   font-size: 1.4rem;
   letter-spacing: 0.08em;
-  cursor: default;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   color: rgba(255, 255, 255, 0.45);
   transition: color 0.4s ease, text-shadow 0.4s ease;
 
@@ -24,7 +25,13 @@ const InfinityMark = styled(motion.span)`
   }
 `;
 
+const MESSAGE =
+  "Some things are constant — like π, and the people who stay in your corner. I will always love you, even when I can't be your love. Call me in a couple of years.";
+
 const Footer = () => {
+  // Controlled tooltip so it opens on hover (desktop) and on tap (mobile).
+  const [open, setOpen] = useState(false);
+
   return (
     <FooterSection as="footer">
       <Container maxWidth="lg">
@@ -35,18 +42,30 @@ const Footer = () => {
           IB Certified Elementary Math Teacher
         </Typography>
 
-        <Tooltip
-          title="Some things are constant — like π, and the people who stay in your corner. I will always love you, even when I can't be your love. Call me in a couple of years."
-          placement="top"
-          arrow
-        >
-          <InfinityMark
-            animate={{ opacity: [0.45, 0.8, 0.45] }}
-            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+        <ClickAwayListener onClickAway={() => setOpen(false)}>
+          <Tooltip
+            title={MESSAGE}
+            placement="top"
+            arrow
+            open={open}
+            onOpen={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+            disableTouchListener
+            slotProps={{
+              popper: {
+                disablePortal: true,
+              },
+            }}
           >
-            H∞T
-          </InfinityMark>
-        </Tooltip>
+            <InfinityMark
+              onClick={() => setOpen((prev) => !prev)}
+              animate={{ opacity: [0.45, 0.8, 0.45] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              H∞T
+            </InfinityMark>
+          </Tooltip>
+        </ClickAwayListener>
 
         <Typography variant="body2" sx={{ mt: 3, opacity: 0.5, fontSize: '0.8rem' }}>
           © {new Date().getFullYear()} HNS Education. All rights reserved.

@@ -29,6 +29,10 @@ const AboutSection = styled(Box)`
 
 const StyledPaper = styled(Paper)`
   padding: 32px;
+
+  @media (max-width: 600px) {
+    padding: 24px 20px;
+  }
   height: 100%;
   transition: all 0.3s ease;
   position: relative;

@@ -24,6 +24,10 @@ const ContactSection = styled(Box)`
 
 const ContactCard = styled(Paper)`
   padding: 48px;
+
+  @media (max-width: 600px) {
+    padding: 24px 16px;
+  }
   height: 100%;
   transition: all 0.3s ease;
   position: relative;
@@ -57,6 +61,11 @@ const EmailContainer = styled(motion.div)`
   gap: 24px;
   cursor: pointer;
   padding: 32px;
+
+  @media (max-width: 600px) {
+    padding: 24px 12px;
+    gap: 16px;
+  }
   border-radius: 16px;
   background: ${({ theme }) => `linear-gradient(135deg, ${theme.palette.primary.light}10, ${theme.palette.secondary.light}10)`};
   transition: all 0.3s ease;
@@ -252,7 +261,9 @@ const Contact = () => {
                 variant="body1"
                 sx={{ 
                   color: theme.palette.primary.main,
-                  fontWeight: 500
+                  fontWeight: 500,
+                  wordBreak: 'break-word',
+                  textAlign: 'center'
                 }}
               >
                 {email}

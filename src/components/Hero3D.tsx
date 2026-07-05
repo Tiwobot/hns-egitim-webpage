@@ -26,8 +26,9 @@ const SHAPES: ShapeSpec[] = [
   { position: [1.5, -2.8, -2], geometry: 'icosahedron', scale: 0.65, color: '#5eead4', speed: 1.8 },
 ];
 
-const Shape = ({ spec }: { spec: ShapeSpec }) => {
+const Shape = ({ spec, dim = false }: { spec: ShapeSpec; dim?: boolean }) => {
   const groupRef = useRef<THREE.Group>(null);
+  const fade = dim ? 0.5 : 1;
 
   useFrame((_, delta) => {
     if (!groupRef.current) return;
@@ -59,7 +60,7 @@ const Shape = ({ spec }: { spec: ShapeSpec }) => {
           <meshPhysicalMaterial
             color={spec.color}
             transparent
-            opacity={0.18}
+            opacity={0.18 * fade}
             roughness={0.2}
             metalness={0.4}
             depthWrite={false}
@@ -71,10 +72,10 @@ const Shape = ({ spec }: { spec: ShapeSpec }) => {
           <meshStandardMaterial
             color={spec.color}
             emissive={spec.color}
-            emissiveIntensity={0.9}
+            emissiveIntensity={0.9 * fade}
             wireframe
             transparent
-            opacity={0.9}
+            opacity={0.9 * fade}
           />
         </mesh>
       </group>
@@ -117,11 +118,21 @@ const ParallaxGroup = ({ children }: { children: React.ReactNode }) => {
   return <group ref={group}>{children}</group>;
 };
 
-const Hero3D = () => {
+const Hero3D = ({ mobile = false }: { mobile?: boolean }) => {
+  // On phones: fewer shapes, lower resolution, wider camera, and shapes
+  // squeezed toward the center so they stay visible on a narrow screen.
+  const shapes = mobile
+    ? SHAPES.slice(0, 4).map((s) => ({
+        ...s,
+        position: [s.position[0] * 0.4, s.position[1], s.position[2]] as [number, number, number],
+        scale: s.scale * 0.8,
+      }))
+    : SHAPES;
+
   return (
     <Canvas
-      dpr={[1, 1.5]}
-      camera={{ position: [0, 0, 6], fov: 55 }}
+      dpr={mobile ? [1, 1.25] : [1, 1.5]}
+      camera={{ position: [0, 0, 6], fov: mobile ? 70 : 55 }}
       style={{
         position: 'absolute',
         top: 0,
@@ -130,14 +141,14 @@ const Hero3D = () => {
         height: '100%',
         pointerEvents: 'none',
       }}
-      gl={{ alpha: true, antialias: true }}
+      gl={{ alpha: true, antialias: !mobile, powerPreference: 'low-power' }}
     >
       <Suspense fallback={null}>
         <ambientLight intensity={1.0} />
         <directionalLight position={[5, 5, 5]} intensity={0.8} />
         <ParallaxGroup>
-          {SHAPES.map((spec, i) => (
-            <Shape key={i} spec={spec} />
+          {shapes.map((spec, i) => (
+            <Shape key={i} spec={spec} dim={mobile} />
           ))}
         </ParallaxGroup>
       </Suspense>

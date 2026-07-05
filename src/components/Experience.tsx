@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container, useTheme } from '@mui/material';
+import { Box, Typography, Container, useTheme, useMediaQuery } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from '@mui/lab';
 import { motion, useScroll, useSpring} from 'framer-motion';
 import styled from 'styled-components';
@@ -40,6 +40,11 @@ const StyledTimelineContent = styled(motion(TimelineContent))`
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   margin: 16px;
+
+  @media (max-width: 900px) {
+    padding: 20px;
+    margin: 8px 0 8px 8px;
+  }
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 
@@ -72,6 +77,7 @@ const FloatingIcon = styled(motion.div)`
 
 const Experience = () => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -144,7 +150,7 @@ const Experience = () => {
             Professional Experience
           </Typography>
 
-          <Timeline position="alternate">
+          <Timeline position={isMobile ? 'right' : 'alternate'}>
             {experiences.map((exp, index) => (
               <StyledTimelineItem key={index}>
                 <TimelineSeparator>
