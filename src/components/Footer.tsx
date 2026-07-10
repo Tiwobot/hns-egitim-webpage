@@ -26,7 +26,7 @@ const InfinityMark = styled(motion.span)`
 `;
 
 const MESSAGE =
-  "Some things are constant — like π, and the people who stay in your corner. I will always love you, even when I can't be your love. Call me in a couple of years.";
+  "Some things are constant — like π, and the people who stay in your corner. I will always love you, even when I can't be your love. 09.07.2027";
 
 const Footer = () => {
   // Controlled tooltip so it opens on hover (desktop) and on tap (mobile).
